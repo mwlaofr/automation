@@ -4,7 +4,6 @@ int red2 = 3;
 int yellow = 4;
 int green2 = 5;
 int botao = 2;
-int bliga = 1;
 
 void setup(){
   pinMode(red1, OUTPUT);
@@ -31,7 +30,6 @@ void setup(){
 
 void loop(){
   if(digitalRead(botao) == 1){
-    digitalWrite(bliga, 1);
     digitalWrite(red2, 0);
     digitalWrite(green1, 0);
     digitalWrite(green2, 0);
@@ -52,7 +50,6 @@ void loop(){
     digitalWrite(red2, 0);
     digitalWrite(green2, 1);
     delay(4000);
-    digitalWrite(bliga, 0);
     
   }
   
